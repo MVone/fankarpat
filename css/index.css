@@ -1,0 +1,80 @@
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header .logo {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+    min-height: 50px;
+    background-color: green;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+
+}
+
+nav ul.menu {
+    padding-left: 20px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-bottom: 0;
+    justify-content: space-around;
+}
+
+nav ul.menu li {
+    list-style: none;
+}
+
+nav ul.menu li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+
+
+nav ul.menu li a:hover {
+    text-decoration: underline;
+}
+
+#tournament-table {
+    background-image: url(../img/upl.jpg);
+    margin: 0;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+}
+
+.news-article {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.news-article img {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 400px) {
+    .news-article {
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 600px) {
+    .news-article {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
